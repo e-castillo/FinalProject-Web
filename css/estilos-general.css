@@ -1,0 +1,542 @@
+* {
+  margin: 0em;
+  padding: 0em;
+  box-sizing: border-box;
+}
+
+header{
+  min-width: 20em;
+}
+
+body {
+  background-image: url(../img/fondo2.jpg);
+  font-family: cursive;
+  width: 100%;
+  min-width: 22.5em;
+}
+
+main {
+  width: 90%;
+  margin: auto;
+}
+
+.bonus-cursos {
+  font-family: "Noto Sans KR", cursive;
+  font-size: 2.8em;
+  color: white;
+  background-color: #0d2149;
+  text-align: center;
+}
+
+.bonus-cursos span {
+  color: #208aae;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #208aae;
+  padding: 0.6em;
+  width: 100%;
+  border-bottom: solid 0.4em #0d2149;
+}
+
+.logo {
+  width: 20%;
+}
+
+.logo a{
+  width: 100%;
+  height: 100%;
+}
+
+.logo a img {
+  width: 100%;
+  height: 100%;
+  border: solid 0.4em #0d2149;
+  border-radius: 10%;
+  order: 1;
+}
+
+.container-de-busqueda {
+  order: 3;
+  height: 3em;
+  position: relative;
+  width: 80%;
+}
+
+.barradebusqueda input {
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  border: solid 0.3em #0d2149;
+  outline: none;
+  padding-right: 2.5em;
+  border-radius: 0.625em;
+  font-size: 1.25em;
+  position: absolute;
+}
+
+.botondebusqueda {
+  position: absolute;
+  top: calc(50% - 1em);
+  left: calc(100% - 2.5em);
+}
+
+.botondebusqueda input {
+  background-color: white;
+  border: none;
+  border-radius: 50%;
+  color: #0d2149;
+  width: 1.5em;
+  height: 1.5em;
+  font-family: "Font Awesome 5 Free";
+  font-size: 1.25em;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.container-carrito{
+  width: 20%;
+  text-align: center;
+}
+
+.iconocarrito span {
+  position: relative;
+  color: white;
+  font-size: 2em;
+  cursor: pointer;
+}
+
+.iconocarrito span:hover {
+  color: #0d2149;
+}
+
+.numerodecompras {
+  background-color: red;
+  border-radius: 50%;
+  padding: 0.2em;
+  width: 0.4em;
+  height: 0.4em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0.4em;
+  left: 45%;
+}
+
+.numerodecompras p {
+  font-size: 0.25em;
+  font-family: cursive;
+  color: white;
+  font-weight: bold;
+}
+
+.menu{
+  display: block;
+  background-color: #0d2149;
+  margin-bottom: 5em;
+  width: 100%;
+}
+
+.menu ul{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 80%;
+}
+
+.menu li{
+  list-style: none;
+  text-decoration: none;
+  border: 0.2em solid #0d2149;
+  height: 80%;
+}
+
+.menu a{
+  color: #208aae;
+  text-decoration: none;
+  font-size: 0.8em;
+  font-weight: bold;
+  font-family: cursive;
+  display: block;
+  padding: 0.03em;
+  border-radius: 0.5em;
+}
+
+.menu a:hover {
+  color: #0d2149;
+  background-color: #208aae;
+}
+
+footer {
+  background-color: black;
+  border-top: #0d2149 solid 0.5em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2em;
+  height: 15em;
+  min-width: 20em;
+}
+
+.container-datos-de-grupo {
+  width: 30%;
+  height: 100%;
+  position: relative;
+}
+
+footer .informacion {
+  position: absolute;
+  height: 80%;
+  width: 100%;
+  top: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.container-datos-de-grupo p {
+  color: black;
+  text-align: center;
+  font-family: cursive;
+  font-size: 0.6em;
+  color: white;
+  font-weight: bold;
+}
+
+footer h5 {
+  width: 100%;
+  height: 20%;
+  position: absolute;
+  font-family: cursive;
+  font-weight: bold;
+  font-size: 0.6em;
+  padding: 1em;
+  color: white;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.container-menu-inferior {
+  width: 30%;
+  height: 100%;
+  position: relative;
+}
+
+.container-menu-inferior ul {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  height: 80%;
+  width: 100%;
+  top: 20%;
+}
+
+.container-menu-inferior li {
+  list-style: none;
+  text-align: center;
+  width: 100%;
+  cursor: pointer;
+  border: solid 0.06em white;
+}
+
+.container-menu-inferior li:hover {
+  background-color: #fca311;
+}
+
+.container-menu-inferior a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: black;
+  text-align: center;
+  font-family: cursive;
+  font-size: 0.65em;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.container-redes-sociales {
+  width: 30%;
+  height: 100%;
+  position: relative;
+}
+
+.container-redes-sociales .iconos {
+  position: absolute;
+  height: 80%;
+  width: 100%;
+  top: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.container-redes-sociales a {
+  font-size:0.9em;
+  color: white;
+  text-decoration: none;
+  font-family: cursive;
+} 
+
+.container-redes-sociales a:hover {
+  color: #fca311;
+} 
+
+
+@media screen and (min-width:28em){
+
+  .iconocarrito span{
+    font-size: 3em;
+  }
+
+  .menu{
+    height: 2.2em;
+  }
+
+  .menu li{
+    height: 100%;
+    padding: 0.1em;
+  }
+}
+
+@media screen and (min-width:47em){
+
+  .flex-container{
+    border-bottom: none;
+  }
+
+  .logo{
+    width: 15%;
+  }
+
+  .logo a img {
+    order: initial;
+  }
+  
+  .container-de-busqueda {
+    order: initial;
+    width: 60%;
+  }
+  
+  .container-carrito{
+    width: 15%;
+  }
+
+  .iconocarrito span {
+    order: initial;
+  }
+
+  .menu{
+    height: 100%;
+  }
+
+  .menu ul{
+    width: 100%;
+    height: auto;
+  }
+  
+  .menu li{
+    height: 100%;
+  }
+  
+  .menu a{
+    font-size: 1em;
+    padding: 0.3em;
+  }
+
+  footer {
+    height: 12em;
+  }
+  
+  .container-datos-de-grupo p {
+    font-size: 0.6em;
+  }
+  
+  footer h5 {
+    font-size: 0.7em;
+  }
+  
+  .container-menu-inferior a {
+    font-size: 0.6em;
+  }
+  
+  .container-redes-sociales a {
+    font-size:0.9em;
+  } 
+}
+
+@media screen and (min-width:60em){
+
+  .container-carrito{
+    width: auto;
+  }
+
+  .iconocarrito span {
+    order: initial;
+    font-size: 3.8em;
+  }
+  
+  .menu{
+    display: flex;
+  }
+
+  .container-menu{
+    display: none;
+  }
+
+  .menu ul{
+    width: 100%;
+    height: 100%;
+  }
+  
+  .menu li{
+    height: 100%;
+    padding: 0.01em;
+  }
+  
+  .menu a{
+    display: inline-block;
+    font-size: 1.2em;
+    padding: 0.3em;
+    width: 100%;
+    height: 100%;
+  }
+
+  footer {
+    height: 12em;
+  }
+  
+  .container-datos-de-grupo p {
+    font-size: 0.6em;
+  }
+  
+  footer h5 {
+    font-size: 0.7em;
+  }
+  
+  .container-menu-inferior a {
+    font-size: 0.6em;
+  }
+  
+  .container-redes-sociales a {
+    font-size:0.9em;
+  } 
+
+ /* //////////////////////////////////////////////////////////////////////// */
+
+  .bonus-cursos {
+    font-size: 3.75em;
+  }
+
+  .logo{
+    width: 12%;
+  }
+
+  .logo a img {
+    width: 100%;
+  }
+
+  .container-de-busqueda {
+    order: initial;
+    width: 50%;
+  }
+
+  .barradebusqueda input {
+    height: 3em;
+    outline: none;
+    padding-right: 2.5em;
+    border-radius: 0.6em;
+    font-size: 1.25em;
+  }
+
+  .botondebusqueda {
+    top: 0.7em;
+    left: calc(100% - 2.9em);
+  }
+
+  .botondebusqueda input {
+    width: 2em;
+    height: 2em;
+    font-size: 1.25em;
+  }
+
+  .iconocarrito span {
+    font-size: 4em;
+  }
+
+  .numerodecompras {
+    padding: 0.2em;
+    width: 0.4em;
+    height: 0.4em;
+    top: 0.4em;
+    left: 45%;
+  }
+
+  .numerodecompras p {
+    font-size: 0.25em;
+  }
+
+  .numero-wallet {
+    padding: 0.2em;
+    width: 0.4em;
+    height: 0.4em;
+    top: 0.4em;
+    right: 0;
+  }
+
+  .numero-wallet p {
+    font-size: 0.25em;
+  }
+
+  .menu {
+    margin-bottom: 2em;
+  }
+
+  .menu ul {
+    width: 100%;
+    height: 80%;
+  }
+
+
+  .menu a {
+    font-size: 1.2em;
+    padding: 0.5em;
+    border-radius: 2em;
+  }
+
+  footer {
+    border-top: #0d2149 solid 0.8em;
+    margin-top: 2em;
+    height: 10em;
+  }
+
+  .container-datos-de-grupo p {
+    font-size: 0.8em;
+  }
+
+  footer h5 {
+    font-size: 0.8em;
+    padding: 1em;
+  }
+
+  .container-menu-inferior li {
+    width: calc(50% - 1em);
+  }
+
+  .container-menu-inferior a {
+    font-size: 0.8em;
+  } 
+
+}

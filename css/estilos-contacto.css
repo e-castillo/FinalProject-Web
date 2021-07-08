@@ -1,0 +1,224 @@
+.titulo{
+    text-align: center;
+    width: 60%;
+    margin: auto;
+    font-weight: bold;
+    font-family: cursive;
+}
+
+.titulo h2{
+    background-color: #208AAE;
+    border: 2px solid #000;
+    border-radius: 0.5em;
+    padding: 0.2em;
+}
+
+.contenedor-formulario{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 2em;
+    width: 100%;
+    font-weight: bold;
+    font-family: cursive;  
+    font-size: 1.2em;
+}
+
+.datos{
+    text-align: center;
+    margin: auto;
+    background-color: #208AAE;
+    width: 90%;
+    border: 2px solid #000;
+    margin-top: 1em;
+    list-style: none;
+    border-radius: 0.8em;
+    margin-bottom: 0.6em;
+}
+
+.formulario label, textarea, input{
+    margin-bottom: 1em;
+    padding: 0.8em;
+    width: 85%;
+}
+
+.contacto ul{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    list-style: none;
+    background-color: #208AAE;
+    border: 2px solid #000;
+    margin: 1em 0em 2em 0em;
+    border-radius: 0.8em;
+}
+
+.contacto li{
+    padding: 1em;
+}
+
+.contenedor-mapa{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.ubicacion h2{
+    background-color: #208AAE;
+    border: 2px solid #000;
+    border-radius: 0.6em;
+    font-weight: bold;
+    font-family: cursive;
+    padding: 0.3em;
+}
+
+.mapa{
+    margin: 1.2em;
+    width: 90%;
+    border: 4px solid #0D2149;
+}
+
+.mapa iframe{
+    width: 100%;
+    height: 15em;
+}
+
+.submit{
+    margin: auto;
+    text-align: center;
+}
+
+.submit input{
+    width: 50%;
+    padding: 0.5em 1.2em 0.5em 1.2em;
+    border-radius: 0.25em;
+    font-weight: bold;
+    font-family: cursive;
+    border: 0.2em solid #208AAE;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+.error{
+    display: inline-block;
+    text-align: center;
+    margin-top: 2em;
+    color: #020101;
+    background-color: #208AAE;
+    font-family: cursive;
+    font-weight: bold;
+    border: 0.1em solid #000000;
+    border-radius: 0.8em;
+    padding: 0.2em;
+}
+
+@media screen and (min-width:47em){
+    .datos{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        background-color: #208AAE;
+        width: 70%;
+        border: 2px solid #000;
+        margin-top: 1em;
+        list-style: none;
+        border-radius: 0.8em;
+        margin-bottom: 0.6em;
+    }
+
+    .contacto{
+        width: 80%;
+        margin: auto;
+    }
+
+
+}
+
+@media screen and (min-width: 60em){
+
+    .titulo{
+        display: inline;
+        margin-left: auto;
+        width: auto;
+        font-weight: bold;
+        font-family: cursive;
+    }
+    
+    .titulo h2{
+        margin-bottom: 1em;
+    }
+
+    .contenedor-formulario{
+        display: flex;
+        flex-direction: row;
+        margin-top: 30px;
+        width: 100%;
+        font-weight: bold;
+        font-family: cursive;  
+        font-size: 18px;
+    }
+    
+    .formulario, .contacto{
+        width: 50%;
+    }
+
+    .formulario{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .datos{
+        background-color: #208AAE;
+        width: 70%;
+        border: 2px solid #000;
+        margin: auto;
+        list-style: none;
+        border-radius: 10px;
+    }
+    
+    .formulario label, textarea, input{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        padding: 0.8em;
+        width: 90%;
+        margin: auto;
+        margin-bottom: 0.3em;
+    }
+    
+    .formulario textarea{
+        margin-bottom: 0.8em;
+    }
+
+    .contacto ul{
+        width: 80%;
+        margin: auto;
+    }
+
+    .contenedor-mapa{
+        margin-top: 3em;
+    }
+         
+    .mapa{
+        margin: auto;
+        margin-top: 1.5em;
+        width: 60%;
+        border: 4px solid #0D2149;
+    }
+    
+    .mapa iframe{
+        height: 25em;
+    }
+    
+    .submit{
+        margin: auto;
+        margin-top: 1em;
+    }
+    
+    .submit input{
+        width: auto;
+    }
+}

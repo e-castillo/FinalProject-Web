@@ -1,0 +1,79 @@
+#calendario{
+    margin-top: 2em;
+}
+
+.fc-view-container{
+    background-color: #0d2149a6;
+}
+
+.fc-unthemed td.fc-today{
+    background-color: rgba(255, 255, 255, 0);
+}
+#calendario h2{
+    color: #0d2149;
+    font-size: 1.2em;
+}
+.fc-day-header span{
+    color: #0d2149;
+    font-size: 1em;
+}
+
+.fc-day-top span{
+    background-color: #0d2149;
+    color: white;
+    font-weight: bold;
+    font-size: 0.5em;
+    width: 1em;
+    height: 1em;
+    line-height: 1em;
+    text-align: center;
+}
+
+footer{
+    margin-top: 2em;
+}
+
+@media screen and (min-width: 47em){
+
+    #calendario h2{
+        font-size: 1.6em;
+    }
+
+    .fc-day-header span{
+        font-size: 1.3em;
+    }
+    
+    .fc-day-top span{
+        font-size: 0.7em;
+        width: 2em;
+        height: 2em;
+        line-height: 2em;
+    }
+    
+    footer{
+        margin-top: 4em;
+    }
+}
+
+
+@media screen and (min-width: 60em){
+
+    #calendario h2{
+        font-size: 2em;
+    }
+
+    .fc-day-header span{
+        font-size: 1.7em;
+    }
+    
+    .fc-day-top span{
+        font-size: 1em;
+        width: 2em;
+        height: 2em;
+        line-height: 2em;
+    }
+    
+    footer{
+        margin-top: 4em;
+    }
+}

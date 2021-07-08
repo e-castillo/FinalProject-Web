@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bonus Cursos - Giftcard-maker</title>
+    <link rel="icon" href="/img/icono-libros.png">
+    <link rel="stylesheet" href="css/estilos-giftcard.css">
+    <link rel="stylesheet" href="css/estilos-general.css">
+    <link rel="stylesheet" href="modules/font-awesome/css/all.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/personalizar.js"></script>
+    <script src="js/funciones-general.js"></script>
+
+</head>
+<body>
+
+    <header>
+
+        <h1 class="bonus-cursos">
+            <span>B</span>onus<span>C</span>ursos
+        </h1>
+
+        <section class="flex-container" id="principio">
+
+            <article class="logo">
+                <a href="index.html">
+                    <img src="img/logo-cursos.png" alt="Logo">
+                </a>
+            </article>
+
+            <article class="container-de-busqueda">
+
+                <form action="#" method="post">
+                    <datalist>
+                        <option value="Curso 1">
+                        <option value="Curso 2">
+                        <option value="Curso 3">
+                        <option value="Curso 4">
+                        <option value="Curso 5">
+                    </datalist>
+
+                    <label for="cursos"></label>
+
+                    <div class="barradebusqueda">
+                        <input type="text" name="postal" list="informacion" placeholder="Busqueda" required>
+                    </div>
+
+                    <div class="botondebusqueda">
+                        <input type="submit" value="">
+                    </div>
+
+                </form>
+
+            </article>
+
+            <article class="container-carrito">
+
+                <div class="iconocarrito">
+                    <span>
+                        <i class="fas fa-shopping-cart"></i>
+
+                        <div class="numerodecompras">
+                            <p id="index-contador-de-cursos">0</p>
+                        </div>
+                    </span>
+                </div>
+
+            </article>
+
+        </section>
+    </header>
+
+    <nav class="menu">
+
+        <ul>
+            <li>
+                <a href="index.html">Inicio</a>
+            </li>
+
+            <li>
+                <a href="curso.html">Cursos</a>
+            </li>
+
+            <li>
+                <a href="calendario.html">Calendario de cursos</a>
+            </li>
+
+            <li>
+                <a href="giftcard.html">Giftcard</a>
+            </li>
+
+            <li>
+                <a href="inscripciones.html">Inscripción</a>
+            </li>
+
+            <li>
+                <a href="contacto.html">Contacto</a>
+            </li>
+        </ul>
+    </nav>
+    
+    <main>
+
+        <section class="contenedor-giftcard">
+            <article class="giftcard-vistaprevia">
+                <div class="vistaprevia">
+                    <h3>GIFTCARD PARA</h3>
+                    <h2 id="destinatario">NOMBRE DESTINATARIO</h2>
+                    <h4 id="precio">$0000.-</h4>
+                </div>
+                <div class="texto">
+                    <h4>VISTA PREVIA DE PERSONALIZACIÓN</h4>
+                </div>
+            </article>
+
+            <article class="giftcard-personalizacion">
+                <form action="#">
+                <ul class="personalizacion">
+                    <li>
+                        <input type="text" id="nombre" placeholder="Nombre Destinatario" required>
+                    </li>
+                    <label for="color">Color de letra</label>
+                <div class="colores">
+                    <li>
+                        <div class="azul"></div>
+                        <input type="radio" value="1" name="color" id="color1" required>
+                    </li>
+                    <li>
+                        <div class="verde"></div>
+                        <input type="radio" value="2" name="color" id="color2" required>
+                    </li>
+                    <li>
+                        <div class="amarillo"></div>
+                        <input type="radio" value="3" name="color" id="color3" required>
+                    </li>
+                    <li>
+                        <div class="bordo"></div>
+                        <input type="radio" value="4" name="color" id="color4" required>
+                    </li>
+                    <li>
+                        <div class="rojo"></div>
+                        <input type="radio" value="5" name="color" id="color5" required>
+                    </li>
+                    <li>
+                        <div class="blanco"></div>
+                        <input type="radio" value="6" name="color" id="color6" required>
+                    </li>
+                </div>
+                <label for="seleccionar-tamaño">Tamaño de fuente</label>
+                <div class="tamaño">
+                    <li>
+                        <p class="px14">14px</p>
+                        <input type="radio" value="14" name="size" id="tamaño1" required>
+                    </li>
+                    <li>
+                        <p class="px16">16px</p>
+                        <input type="radio" value="16" name="size" id="tamaño2" required>
+                    </li>
+                    <li>
+                        <p class="px18">18px</p>
+                        <input type="radio" value="18" name="size" id="tamaño3" required>
+                    </li>
+                    <li>
+                        <p class="px22">22px</p>
+                        <input type="radio" value="22" name="size" id="tamaño4" required>
+                    </li>
+                    <li>
+                        <p class="px26">26px</p>
+                        <input type="radio" value="26" name="size" id="tamaño5" required>
+                    </li>
+                </div>
+                <label for="monto">Monto $</label>
+                <div class="monto">
+                    <li>
+                        <input type="number" id="valor" name="valor" placeholder="1000" required>
+                    </li>
+                </div>
+                <label for="seleccionar-posicion">Ubicación</label>
+                <div class="posicion">
+                    <li>
+                        <div class="abajo-izq">
+                            <h5>-</h5>
+                        </div>
+                        <input type="radio" value="abajoder" name="ubicacion" id="ubicacion1" required>
+                    </li>
+                    <li>
+                        <div class="arriba-izq">
+                            <h5>-</h5>
+                        </div>
+                        <input type="radio" value="arribaiz" name="ubicacion" id="ubicacion2" required>
+                    </li>
+                    <li>
+                        <div class="arriba-der">
+                            <h5>-</h5>
+                        </div>
+                        <input type="radio" value="arribader" name="ubicacion" id="ubicacion3" required>
+                    </li>
+                </div>
+
+                <label for="fondo">Fondo</label>
+                <div class="fondos">
+                    <li>
+                        <p>Fondo 1</p>
+                        <input type="radio" value="01" name="fondo" id="fondo1" required>
+                    </li>
+                    <li>
+                        <p>Fondo 2</p>
+                        <input type="radio" value="02" name="fondo" id="fondo2" required>
+                    </li>
+                    <li>
+                        <p>Fondo 3</p>
+                        <input type="radio" value="03" name="fondo" id="fondo3" required>
+                    </li>
+                    <li>
+                        <p>Fondo 4</p>
+                        <input type="radio" value="04" name="fondo" id="fondo4" required>
+                    </li>
+                    <li>
+                        <p>Fondo 5</p>
+                        <input type="radio" value="05" name="fondo" id="fondo5" required>
+                    </li>
+                </div>
+            </ul>
+
+            <div class="submit">
+                <input type="submit" class="submit-button" value="CONFIRMAR">
+            </div>
+                
+            </form>
+            </article>
+
+
+        </section>
+
+
+
+    </main>
+
+    <footer>
+
+        <div class="container-datos-de-grupo">
+
+            <h5>DATOS DEL GRUPO</h5>
+
+            <div class="informacion">
+                <p>Castillo Emiliano - 40.187.592</p>
+                <p>Coco, Matías Ariel- 40.767.216</p>
+                <p>Salgado, Joel Nicolas - 40.895.810</p>
+            </div>
+        </div>
+
+        <div class="container-menu-inferior">
+
+            <h5>MENU INFERIOR</h5>
+
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html">Inicio</a>
+                    </li>
+
+                    <li>
+                        <a href="curso.html">Cursos</a>
+                    </li>
+
+                    <li>
+                        <a href="curso.html">Calendario de cursos</a>
+                    </li>
+
+                    <li>
+                        <a href="curso.html">Giftcard</a>
+                    </li>
+
+                    <li>
+                        <a href="curso.html">Inscripción</a>
+                    </li>
+
+                    <li>
+                        <a href="curso.html">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="container-redes-sociales">
+
+            <h5>REDES SOCIALES</h5>
+
+            <div class="iconos">
+
+                <a href="https://www.facebook.com/" target="_blank">
+                    <span>
+                        <i class="fab fa-facebook-square"></i>
+                    </span>
+                    Facebook
+                </a>
+
+                <a href="https://twitter.com/?lang=es" target="_blank">
+                    <span>
+                        <i class="fab fa-twitter"></i>
+                    </span>
+                    Twitter
+                </a>
+
+                <a href="https://www.instagram.com/" target="_blank">
+                    <span>
+                        <i class="fab fa-instagram"></i>
+                    </span>
+                    Instagram
+                </a>
+            </div>
+
+    </footer>
+
+</body>
+</html>

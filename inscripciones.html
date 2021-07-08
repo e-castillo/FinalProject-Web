@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bonus Cursos - Inscripciones</title>
+    <link rel="icon" href="/img/icono-libros.png">
+    <link rel="stylesheet" href="css/estilos-inscripcion.css">
+    <link rel="stylesheet" href="css/estilos-general.css">
+    <link rel="stylesheet" href="modules/font-awesome/css/all.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/inscripcion.js"></script>
+    <script src="js/funciones-general.js"></script>
+</head>
+
+<body>
+
+    <header>
+
+        <h1 class="bonus-cursos">
+            <span>B</span>onus<span>C</span>ursos
+        </h1>
+
+        <section class="flex-container" id="principio">
+
+            <article class="logo">
+                <a href="index.html">
+                    <img src="img/logo-cursos.png" alt="Logo">
+                </a>
+            </article>
+
+            <article class="container-de-busqueda">
+
+                <form action="#" method="post">
+                    <datalist>
+                        <option value="Curso 1">
+                        <option value="Curso 2">
+                        <option value="Curso 3">
+                        <option value="Curso 4">
+                        <option value="Curso 5">
+                    </datalist>
+
+                    <label for="cursos"></label>
+
+                    <div class="barradebusqueda">
+                        <input type="text" name="postal" list="informacion" placeholder="Busqueda" required>
+                    </div>
+
+                    <div class="botondebusqueda">
+                        <input type="submit" value="">
+                    </div>
+
+                </form>
+
+            </article>
+
+            <article class="container-carrito">
+
+                <div class="iconocarrito">
+                    <span>
+                        <i class="fas fa-shopping-cart"></i>
+
+                        <div class="numerodecompras">
+                            <p id="index-contador-de-cursos">0</p>
+                        </div>
+                    </span>
+                </div>
+
+            </article>
+
+        </section>
+    </header>
+
+    <nav class="menu">
+
+        <ul>
+            <li>
+                <a href="index.html">Inicio</a>
+            </li>
+
+            <li>
+                <a href="curso.html">Cursos</a>
+            </li>
+
+            <li>
+                <a href="calendario.html">Calendario de cursos</a>
+            </li>
+
+            <li>
+                <a href="giftcard.html">Giftcard</a>
+            </li>
+
+            <li>
+                <a href="inscripciones.html">Inscripción</a>
+            </li>
+
+            <li>
+                <a href="contacto.html">Contacto</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <section class="contenedor-inscripcion">
+            <article class="titulo">
+                <p>
+                <h2>Microsoft Office desde cero</h2>
+                <h3>INSCRIPCIÓN</h3>
+                </p>
+            </article>
+
+            <form action="#" method="post">
+
+            <article class="formulario">
+                <div class="datos">
+                    <label for="nombre1">Nombre</label>
+                    <input type="text" name="nombre" required>
+                    <label for="apellido1">Apellido</label>
+                    <input type="text" name="apellido" required>
+                    <label for="documento1">DNI</label>
+                    <input type="number" name="documento" required>
+                    <i name="agregar" id="add" class="fas fa-plus-circle add"></i>
+                    <i class="fas fa-window-close delete"></i>
+                </div>
+                <div class="datos">
+                    <label for="nombre1">Nombre</label>
+                    <input type="text" name="nombre">
+                    <label for="apellido1">Apellido</label>
+                    <input type="text" name="apellido">
+                    <label for="documento1">DNI</label>
+                    <input type="number" name="documento">
+                    <i name="agregar" id="add" class="fas fa-plus-circle add"></i>
+                    <i class="fas fa-window-close delete"></i>
+                </div>
+                <div class="datos">
+                    <label for="nombre1">Nombre</label>
+                    <input type="text" name="nombre">
+                    <label for="apellido1">Apellido</label>
+                    <input type="text" name="apellido">
+                    <label for="documento1">DNI</label>
+                    <input type="number" name="documento">
+                    <i name="agregar" id="add" class="fas fa-plus-circle add"></i>
+                    <i class="fas fa-window-close delete"></i>
+                </div>
+            </article>
+            
+        </section>
+
+        <section class="contenedor-submit">
+            <article class="valor">
+                <p class="precio">$100.00.-</p>
+            </article>
+
+            <article class="submit">
+                <input type="submit" class="submit-button" value="INSCRIBIRSE">
+            </article>
+        </section>
+        </form>
+    </main>
+
+    <footer class="footer-inscripcion">
+
+        <div class="container-datos-de-grupo">
+
+            <h5>DATOS DEL GRUPO</h5>
+
+            <div class="informacion">
+                <p>Castillo Emiliano - 40.187.592</p>
+                <p>Coco, Matías Ariel- 40.767.216</p>
+                <p>Salgado, Joel Nicolas - 40.895.810</p>
+            </div>
+        </div>
+
+        <div class="container-menu-inferior">
+
+            <h5>MENU INFERIOR</h5>
+
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html">Inicio</a>
+                    </li>
+
+                    <li>
+                        <a href="curso.html">Cursos</a>
+                    </li>
+
+                    <li>
+                        <a href="curso.html">Calendario de cursos</a>
+                    </li>
+
+                    <li>
+                        <a href="curso.html">Giftcard</a>
+                    </li>
+
+                    <li>
+                        <a href="curso.html">Inscripción</a>
+                    </li>
+
+                    <li>
+                        <a href="curso.html">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="container-redes-sociales">
+
+            <h5>REDES SOCIALES</h5>
+
+            <div class="iconos">
+
+                <a href="https://www.facebook.com/" target="_blank">
+                    <span>
+                        <i class="fab fa-facebook-square"></i>
+                    </span>
+                    Facebook
+                </a>
+
+                <a href="https://twitter.com/?lang=es" target="_blank">
+                    <span>
+                        <i class="fab fa-twitter"></i>
+                    </span>
+                    Twitter
+                </a>
+
+                <a href="https://www.instagram.com/" target="_blank">
+                    <span>
+                        <i class="fab fa-instagram"></i>
+                    </span>
+                    Instagram
+                </a>
+            </div>
+
+    </footer>
+
+</body>
+
+</html>

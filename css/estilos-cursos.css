@@ -1,0 +1,369 @@
+
+.curso{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #208AAE;
+    width: 90%;
+    margin: 2em auto 0;
+    border: #0D2149 solid 0.5em;
+    border-radius: 1em;
+}
+
+.curso img{
+    width: 70%;
+    margin: 1.25em 3em;
+    border: #0D2149 double 0.5em;
+}
+
+.curso-texto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.6em;
+    margin: 3em 0 1.25em;
+}
+.curso-texto h2{
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 1.25em;
+}
+.curso-texto div{
+    margin-bottom: 1.25em;
+}
+.curso-texto p{
+    margin-bottom: 0.5em;
+    padding-left: 0.625em;
+    font-size: 1.5em;
+}
+.curso-texto ul{
+    padding-left: 15%;
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+.underline-bolder{
+    text-decoration: underline;
+    font-weight: bolder;
+}
+#inscripcion{
+    background-color: #208AAE;
+    color: #ffffff;
+    border: #0D2149 0.5em solid;
+    font-size: 1.25em;
+    font-weight: bolder;
+    padding: 0.3em;
+    text-decoration: none;
+}
+#inscripcion:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    background-color: #0D2149;
+    border-color: #fca311;
+}
+
+/* //////////////////////////////////////////                CONTENIDOS                /////////////////////////////////////////// */
+
+.container-contenidos{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 1.25em auto;
+}
+
+.container-contenidos button{
+    background-color: #0D2149;
+    color: #ffffff;
+    height: 3em;
+    padding: 0.25em;
+    text-align: center;
+    cursor: pointer;
+    font-size: large;
+}
+
+.container-contenidos button:hover{
+    background-color: #3540a5;
+  }
+
+.contenidos div{
+    display: flex;
+    padding: 0 1.25em;
+    font-size: 0.8em;
+    background-color: #208AAE;
+    border-bottom: 0.125em solid #000;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 2em;
+}
+
+h3{
+    text-align: center;
+    margin: 1.25em auto;
+    font-size: 1.5em;
+    color: #000000;
+    background-color: #4749bea9;
+    border-radius: 40%;
+    padding: 0.3em;
+}
+.fa-clock{
+    color: #0D2149;
+}
+.fa-file-pdf{
+    color: #0D2149;
+}
+.fa-video{
+    color: #0D2149;
+}
+.fa-check-square{
+    color: #0D2149;
+}
+
+/* //////////////////////////////////////////                DOCENTE                /////////////////////////////////////////// */
+.docente{
+    display: flex;
+    flex-direction: column;
+}
+.docente-cont{
+    background-color: #208AAE;
+    margin: 0.3em auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: #0D2149 0.5em solid;
+    border-radius: 1em;
+    width: 80%;
+}
+.docente-cont img{
+    width: 7em;
+    height: 7em;
+    border-radius: 50%;
+    margin: 2%;
+}
+.info-docente{
+    justify-content: flex-start;
+    margin: 1.9em 0 0.6em 0;
+    padding: 0.3em;
+}
+.info-docente h4{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.info-docente p{
+    font-size: 0.8em;
+}
+/* //////////////////////////////////////////                ESTRELLAS                /////////////////////////////////////////// */
+
+#form {
+    width: 15em;
+    margin: 0 auto;
+    height: 3em;
+  }
+  
+  #form p {
+    text-align: center;
+  }
+  
+  #form label {
+    font-size: 1.25em;
+  }
+  
+  input[type="radio"] {
+    display: none;
+  }
+  
+  label {
+    color: #808080;
+  }
+  
+  .clasificacion {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+    display: inline-block;
+  }
+  
+  label:hover ~ label{
+    color: #ffa500;
+  }
+  
+  input[type="radio"]:checked ~ label{
+    color: #ffa500;
+  }
+
+/* //////////////////////////////////////////                ASIDE                /////////////////////////////////////////// */
+aside h4{
+    text-align: center;
+    margin: 1.9em auto 0;
+    background-color: #0D2149;
+    width: 30%;
+    font-size: 1em;
+    color: #ffffff;
+    border-radius: 1.5em 1.5em 0 0;
+}
+.container-otros-cursos{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #208AAE;
+    padding: 1em;
+    border-radius: 1em;
+    border: 0.5em solid #0D2149;
+    margin: auto;
+    justify-content: space-around;
+    width: 95%;
+}
+.container-otros-cursos div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-otros-cursos button{
+    background-color: #0D2149;
+    color: #ffffff;
+    font-size: 1em;
+    font-family: cursive;
+    width: 90%;
+    margin-top: 0.1em 0;
+    border: #208AAE solid 4px;
+    border-radius: 0.25em;
+}
+.container-otros-cursos button:hover{
+    font-weight: bold;
+    cursor: pointer;
+    color: #fca311;
+    border: #fca311 solid 0.25em;
+    border-radius: 0.25em;
+}
+.otros-cursos-img{
+    position: relative;
+}
+.otros-cursos-img h5{
+    display: inline-block;
+    color: #ffffff;
+    background-color: #000;
+    font-size: 0.9em;
+    position: absolute;
+    top: 0.3em;
+    left: 0.3em;
+    right: 0.3em;
+    text-align: center;
+}
+
+.otros-cursos-img p{
+    display: inline-block;
+    font-size: 0.9em;
+    color: #fca311;
+    background-color: rgba(87, 87, 87, 0.719);
+}
+.otros-cursos-img img{
+    width: 9em;
+    height: 9em;
+    border-radius: 0.25em;
+}
+.precio{
+    position: absolute;
+    bottom: 0.4em;
+    right: 0.4em;
+}
+.duracion{
+    position: absolute;
+    bottom: 0.4em;
+    left: 0.4em;
+}
+@media screen and (min-width: 34em){
+    #inscripcion{
+        font-size: 1.5em;
+    }
+    .otros-cursos-img img{
+        width: 12.25em;
+        height: 12.25em;
+    }
+    .container-otros-cursos button{
+        margin: 0.5em 0;
+    }
+}
+@media screen and (min-width: 47em){
+    .curso-texto h2{
+        font-size: 2.5em;
+    }
+    #inscripcion{
+        font-size: 1.75em;
+    }
+    .otros-cursos-img img{
+        width: 9em;
+        height: 9em;
+    }
+    .otros-cursos-img h5{
+        font-size: 1em;
+    }
+    .otros-cursos-img p{
+        font-size: 1em;
+    }
+    .docente-cont img{
+        width: 11em;
+        height: 11em;
+    }
+    aside h4{
+        font-size: 1.25em;
+    }
+}
+@media screen and (min-width: 60em){
+    .curso{
+        flex-direction: row;
+        margin: 3em auto 0;
+    }
+    .curso img{
+        width: 35%;
+        border: #0D2149 double 1.25em;
+    }
+    #inscripcion{
+        font-size: 2em;
+    }
+    .container-contenidos{
+        width: 70%;
+    }
+    .contenidos div{
+        font-size: 1em;
+    }
+    .docente-cont{
+        flex-direction: row;
+        width: 90%;
+    }
+    .info-docente h4{
+        padding-bottom: 0.7em;
+    }
+    .info-docente p{
+        font-size: 1em; 
+    }
+    .otros-cursos-img h5{
+        font-size: 1.2em;
+    }
+    .otros-cursos-img img{
+        width: 10em;
+        height: 10em;
+    }
+}
+@media screen and (min-width: 75em){
+    .curso-texto h2{
+        font-size: 3em;
+        margin-bottom: 1.25em;
+    }
+    .curso-texto p{
+        font-size: 1.8em;
+        padding-right: 0.5em;
+    }
+    h3{
+        font-size: 2.5em;
+    }
+    .curso-texto ul{
+        padding-left: 5%;
+    }
+    .container-contenidos{
+        width: 50%;
+    }
+    .otros-cursos-img img{
+        width: 12em;
+        height: 12em;
+    }
+}
